@@ -8,11 +8,7 @@ const Home = () => {
   return (
     /* fragment (included with babel 7 via cra) - allows the grouping of children */
     <>
-      <Row style={{ marginTop: "16px" }}>
-        <Col>
-          <h2 className="text-center">train-tap</h2>
-        </Col>
-      </Row>
+      
       <Row style={{ marginTop: "16px" }}>
         <Col>
           <Card className="text-center">

@@ -1,11 +1,16 @@
+import { Route } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Home from "./Home";
+import Navigation from "./NavBar";
 
 function App() {
   return (
-    <Container fluid>
-      <Home></Home>
-    </Container>
+    <>
+      <Navigation></Navigation>
+      <Container fluid>
+        <Route exact path="/" component={Home} />
+      </Container>
+    </>
   );
 }
 
