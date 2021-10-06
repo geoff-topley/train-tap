@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "../node_modules/toastr/build/toastr.min.css";
 
 // BrowserRouter handles routing in the browser - placement of component (line 13) so all child components can declare routes
 import { BrowserRouter } from "react-router-dom";
