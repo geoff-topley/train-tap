@@ -33,7 +33,12 @@ const Home = () => {
             <Card.Header></Card.Header>
             <Card.Body>
               <div className="d-grid gap-2">
-                <Button variant="primary" size="lg">
+                <Button
+                  variant="primary"
+                  size="lg"
+                  as={Link}
+                  to={"/existing-training-plan-form"}
+                >
                   Review Existing / Previous Training Plan
                 </Button>
               </div>
