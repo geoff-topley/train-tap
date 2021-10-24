@@ -16,6 +16,11 @@ const NewTrainingPlanForm = () => {
 
   const handleSubmit = (event, trainingPlanTitle, trainingPlanGoal) => {
     event.preventDefault();
+    if (trainingPlanTitle == "" || trainingPlanGoal == "") {
+      toastr.options = { positionClass: "toast-top-center", timeOut: 2000 };
+      toastr["warning"]("Please enter a Title and Goal");
+      return;
+    }
     client
       .query(
         q.Create(q.Collection("plans"), {
