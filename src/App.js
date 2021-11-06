@@ -4,6 +4,7 @@ import Home from "./Home";
 import Navigation from "./NavBar";
 import NewTrainingPlanForm from "./NewTrainingPlanForm";
 import ExistingTrainingPlan from "./ExistingTrainingPlan";
+import Activities from "./Activities";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           path="/existing-training-plan-form"
           component={ExistingTrainingPlan}
         />
+        <Route path="/activities/:id" component={Activities} />
       </Container>
     </>
   );
